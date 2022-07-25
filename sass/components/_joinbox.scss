@@ -1,0 +1,31 @@
+
+.join-box {
+    display: flex;
+  }
+  
+  .footer-button {
+    margin-left: auto;
+  }
+  .footer-subscribe {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 1.14;
+    color: var(--white-cl);
+    background-color: var(--hero-footer-bg-cl);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color var(--anim);
+  }
+  .footer-subscribe-section {
+    display: flex;
+  
+  &:hover .footer-subscribe,
+  &:focus .footer-subscribe {
+    border-color: var(--color-overlay);
+  }}
+  

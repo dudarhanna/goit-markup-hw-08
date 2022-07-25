@@ -1,0 +1,27 @@
+
+/* Описання */
+.benefits-text {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 10px;
+  }
+  /* секція Benefits */
+  .benefits-title {
+    max-width: 270px;
+  }
+  .benefits-list {
+    display: flex;
+  }
+  .benefits-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-btn);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .benefits--icon {
+    fill: currentColor;
+  }

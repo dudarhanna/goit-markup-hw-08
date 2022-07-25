@@ -1,0 +1,138 @@
+/* Модальне вікно */
+
+.sign-up-text {
+    display: inline-block;
+    color: var(--black-cl);
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+  .form-field-last {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+  .position-icon {
+    position: relative;
+  /* ховер, фокус на input */
+  &:focus-within .form-stroke,
+  &:hover .form-stroke {
+    border-color: var(--color-overlay);
+  }}
+  
+  .icon-inputs {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    fill: var(--black-cl);
+    transition: fill var(--anim);
+  
+  /* ховер, фокус на іконки */
+ .position-icon:focus-within &,
+.position-icon:hover & {
+    fill: var(--color-overlay);
+  }}
+ 
+  .form-stroke {
+    width: 448px;
+    height: 40px;
+    border: 1px solid var(--form-cl);
+    border-radius: 4px;
+    padding: 12px 16px;
+    padding-left: 42px;
+    margin-bottom: 10px;
+    outline: transparent;
+    transition: border-color var(--anim);
+  
+  }
+  .form-stroke-comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid var(--form-cl);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+    outline: transparent;
+    transition: border-color var(--anim);
+  
+  /* ховер, фокус на input коментар */
+  .position-icon:focus-within &,
+  .position-icon:hover & {
+    border-color: var(--color-overlay);
+  }}
+  .terms-agreement {
+    color: var(--color-overlay);
+  }
+  /* Portfolio Modal-window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity var(--anim), visibility var(--anim);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background-color: var(--white-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--white-cl);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  cursor: pointer;
+  transition: fill var(--anim);
+/* Ховер, фокус кнопки */
+&:hover,
+&:focus {
+  fill: var(--accent-cl);
+}}

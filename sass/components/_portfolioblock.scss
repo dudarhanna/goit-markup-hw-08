@@ -1,0 +1,14 @@
+.portfolio-block {
+    display: block;
+    transition: box-shadow var(--anim);
+  }
+  .portfolio-block:hover,
+  .portfolio-block:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .text-frame {
+    padding: 20px 24px;
+    border: 1px solid var(--portfolio-cl);
+    border-top: none;
+  }

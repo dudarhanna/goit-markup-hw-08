@@ -1,0 +1,17 @@
+
+/* Cекція хедер */
+.header {
+    border-bottom: 1px solid var(--header-cl);
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__list {
+    display: flex;
+    margin-left: auto;
+ 
+  & .contact-mail + .contact-telephone {
+    margin-left: 50px;
+  }}

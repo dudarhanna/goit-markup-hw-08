@@ -1,0 +1,68 @@
+
+/* Футер */
+.page-footer {
+    background: var(--hero-footer-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    transition: color var(--anim);
+     /* Ховер, Фокус для футер адреси */
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+  }
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-item-adress {
+    margin-right: 70px;
+  }
+  .footer-address-link {
+    color: var(--white-cl);
+  }
+  .footer-address-mail-tel {
+    color: var(--footer-mail-tel-cl);
+  }
+  .footer-text:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-logo {
+    
+    margin-top: 20px;
+  }
+ 
+  .footer-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--white-cl);
+    background-color: var(--footer-bcg-cl);
+    border-radius: 50%;
+    transition: background-color var(--anim);
+ 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+  }}
+  .section-footer {
+    font-weight: 700;
+    color: var(--white-cl);
+    margin-bottom: 20px;
+  }
+  .footer-social-list {
+    margin-right: 10px;
+  }
+  .footer-social {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }

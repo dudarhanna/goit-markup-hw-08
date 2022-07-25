@@ -1,0 +1,43 @@
+.nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--black-cl);
+    transition: color var(--anim);
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+  }
+
+
+  .nav__list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__list-item {
+    position: relative; }
+
+  .current--link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--accent-cl);
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-cl);
+    border-radius: 2px;
+    transform: translateY(1px);
+  }}
+    /* Ховер, Фокус для меню */
+    /* Риска на меню */

@@ -1,0 +1,30 @@
+
+/* Cекція Regulars */
+.regulars-list {
+    display: flex;
+    justify-content: center;
+  }
+  .regulars-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .regulars-logo {
+    fill: currentColor;
+  }
+  .logo-list {
+    color: var(--icon-cl);
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-cl);
+    border-radius: 4px;
+    transition: color var(--anim), border-color var(--anim);
+ 
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+    border-color: var(--accent-cl);
+  } }
+  
