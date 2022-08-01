@@ -1,34 +1,41 @@
 /* Cекція-Герой */
 .main-title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    font-size: 44px;
-    text-align: center;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-cl);
-  }
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-cl);
+}
 /* Заголовки */
 .section-tittle {
-    font-weight: 700;
-    color: var(--black-cl);
-  }
-  .tittle-big {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .tittle-small {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
+  font-weight: 700;
+  color: var(--black-cl);
+}
+.tittle-big {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 
-  /* Сторінка Портфоліо */
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+.tittle-small {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Сторінка Портфоліо */
 
 /* Заголовки */
 .tittle-portfolio {

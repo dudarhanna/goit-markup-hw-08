@@ -1,39 +1,59 @@
 /* Сітка Flex */
-.portfolio {
-  padding-top: 60px;
-    padding-bottom: 60px;
-  
-    @media screen and (min-width: 768px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-  
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-}
 
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--indent));
-    margin-top: calc(-1 * var(--indent));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: calc(100% / 1 - var(--indent));
 
-    }
- 
-  .card-set-item {
+  @media screen and (min-width: 768px) {
+    margin-left: calc(-1 * var(--indent));
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: calc(-1 * var(--indent));
+  }
+}
+
+.card-set-item {
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 1 - var(--indent));
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--indent));
+    margin-left: var(--indent);
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - var(--indent));
     margin-left: var(--indent);
-    margin-top: var(--indent);
+    max-width: 370px;
   }
-  .overlay-card {
-    position: relative;
-    overflow: hidden;
-  }
-  /* Overlay на сторінці portfolio */
- 
+}
+.card-set-item:not(:last-child) {
+  margin-bottom: var(--indent);
+}
+//   .card-set-item {
+//     @media screen and (min-width: 480px) {
+// flex-basis: calc(100% / 1 - var(--indent));
+// justify-content: flex-end; }
+
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc(100% / 2 - var(--indent));
+//      margin-left: var(--indent); }
+
+//     @media screen and (min-width: 1200px) {
+//         flex-basis: calc(100% / 3 - var(--indent));
+//     margin-left: var(--indent);
+//   }}
+.overlay-card {
+  position: relative;
+  overflow: hidden;
+}
+/* Overlay на сторінці portfolio */
+
 .portfolio-overlay {
   position: absolute;
   display: flex;
@@ -52,10 +72,11 @@
   line-height: 1.56;
   color: var(--white-cl);
 
-.portfolio-block:hover &,
-.portfolio-block:focus & {
-  transform: translateY(0);
-}}
+  .portfolio-block:hover &,
+  .portfolio-block:focus & {
+    transform: translateY(0);
+  }
+}
 
 .portfolio-block {
   display: block;

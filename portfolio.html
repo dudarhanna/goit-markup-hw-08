@@ -24,20 +24,74 @@
   </head>
   <body>
     <!-- Секція header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="logo link" href="./index.html">
           Web<span class="logo-style-black">Studio</span></a
         >
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="40" height="40">
+            <use
+              class="mobile-menu-burger"
+              href="./images/icons.svg#icon-menumobile"
+            ></use>
+            <use
+              class="mobile-menu-close"
+              href="./images/icons.svg#icon-closemobile"
+            ></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню -->
+        <div class="mobil-menu" data-menu>
+          <ul class="list mobile-menu-nav">
+            <li class="mobile-menu-nav-item">
+              <a class="link mobile-nav-item" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="link mobile-nav-item" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="link mobile-nav-item" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-tel-mail link accent" href=""
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-tel-mail link" href=""
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Indtagram</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Lindkedin</a>
+            </li>
+          </ul>
+        </div>
         <nav class="nav">
           <ul class="header__list list">
             <li class="nav__list-item">
-              <a class="nav-link link" href="./index.html"
-                >Студия</a
-              >
+              <a class="nav-link link" href="./index.html">Студия</a>
             </li>
             <li class="nav__list-item">
-              <a class="nav-link link current--link" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link link current--link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__list-item">
               <a class="nav-link link" href="#">Контакты</a>
@@ -62,7 +116,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Блок унікального контенту на сторінці -->
     <main>
       <section class="section portfolio">
@@ -404,5 +458,6 @@
       </div>
     </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

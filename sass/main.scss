@@ -1,12 +1,12 @@
-// utils styles 
+// utils styles
 @import "./utils/visual-hidden";
 @import "./utils/vars";
 @import "./utils/reset";
 
-
 // components styles
+
 @import "./components/nav";
-@import "./components/common";
+@import "./components/mobile-menu";
 @import "./components/section";
 @import "./components/overlay";
 @import "./components/container";
@@ -25,8 +25,3 @@
 @import "./components/portfolioblock";
 @import "./components/footer";
 @import "./components/joinbox";
-
-
-
-
-

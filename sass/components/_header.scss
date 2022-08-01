@@ -1,17 +1,28 @@
-
 /* Cекція хедер */
 .header {
-    border-bottom: 1px solid var(--header-cl);
-  }
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__list {
-    display: flex;
-    margin-left: auto;
- 
+  border-bottom: 1px solid var(--header-cl);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  margin-left: auto;
+
   & .contact-mail + .contact-telephone {
     margin-left: 50px;
-  }}
+  }
+}
+.contact {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  // @media screen and (min-width: 767px) {
+  //   margin-right: 215px;
+  // }
+}

@@ -20,15 +20,70 @@
     <!-- Кастомні стилі -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-  
   </head>
   <body data-body>
-    <!-- Секція header -->
-    <!-- <header class="header">
+    <!--  Секція header -->
+    <header class="header">
       <div class="container header-container">
         <a class="logo link" href="./index.html">
           Web<span class="logo-style-black">Studio</span></a
         >
+        <button class="mobile-menu-btn" type="button" data-menu-button>
+          <svg class="mobile-menu-icon" width="40" height="40">
+            <use
+              class="mobile-menu-burger"
+              href="./images/icons.svg#icon-menumobile"
+            ></use>
+            <use
+              class="mobile-menu-close"
+              href="./images/icons.svg#icon-closemobile"
+            ></use>
+          </svg>
+        </button>
+        <!-- Мобільне меню -->
+        <div class="mobil-menu" data-menu>
+          <ul class="list mobile-menu-nav">
+            <li class="mobile-menu-nav-item current">
+              <a class="link mobile-nav-item current" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="link mobile-nav-item" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="link mobile-nav-item" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-tel-mail link accent" href=""
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-tel-mail link" href=""
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Indtagram</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a class="mobile-menu-socials-link link" href="">Lindkedin</a>
+            </li>
+          </ul>
+        </div>
         <nav class="nav">
           <ul class="header__list list">
             <li class="nav__list-item">
@@ -53,7 +108,7 @@
             >
           </li>
           <li class="contact-telephone">
-            <a class="contact-list link" href="tel:+380961111111">
+            <a class="accent contact-list link" href="tel:+380961111111">
               <svg class="contact--icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -62,11 +117,11 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Блок унікального контенту на сторінці -->
     <main>
       <!-- Секція Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-main" type="button" data-modal-open>
@@ -74,7 +129,8 @@
           </button>
         </div>
       </section>
-      <!-- Модальне вікно -->
+      -->
+      <!-- Модальне вікно  -->
       <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-close-btn" type="button" data-modal-close>
@@ -145,8 +201,8 @@
               ></textarea>
             </div> -->
 
-            <!-- Agreement -->
-            <!-- <label class="label-agreement">
+      <!-- Agreement -->
+      <!-- <label class="label-agreement">
               <input class="check-input" type="checkbox" required />
               <span class="checkbox-icon"> </span>
               <span>
@@ -160,7 +216,7 @@
         </div>
       </div>
       <!-- Секція Benefits -->
-      <!-- <section class="benefits section">
+      <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="list benefits-list">
@@ -218,8 +274,8 @@
               </p>
             </li>
           </ul>
-        </div> -->
-      </section> 
+        </div>
+      </section>
       <!-- Секція  About -->
       <section class="about">
         <div class="container">
@@ -245,7 +301,7 @@
         </div>
       </section>
       <!-- Секція Team -->
-      <!-- <section class="team-section section">
+      <section class="team-section section">
         <div class="container">
           <h2 class="section-tittle tittle-big">Наша команда</h2>
           <ul class="list team-list">
@@ -399,9 +455,9 @@
             </li>
           </ul>
         </div>
-      </section> --> 
-      <!-- Секція Regulars -->
-      <!-- <section class="section">
+      </section>
+      <!-- Секція Regulars  -->
+      <section class="section">
         <div class="container">
           <h2 class="section-tittle tittle-big">Постоянные клиенты</h2>
 
@@ -444,9 +500,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- Секція футер -->
+    <!-- Секція футер   -->
     <!-- <footer class="page-footer">
       <div class="container footer-box">
         <div class="footer-item-adress">
@@ -538,5 +594,6 @@
       </div>
     </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

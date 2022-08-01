@@ -164,11 +164,22 @@
 /*  Кнопки на сторінці портфоліо */
 .list-button {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;}
+ margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            margin-bottom: 50px;
+  }}
+  
   .portfolio-btn-list:not(:last-child) {
     margin-right: 8px;
+    padding-bottom: 15px;
 }
 .btn-portfolio {
   padding: 6px 22px;
