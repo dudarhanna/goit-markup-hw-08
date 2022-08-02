@@ -19,16 +19,16 @@
     cursor: pointer;
     transition: background-color var(--anim), color var(--anim);
   
-/* Ховер, фокус кнопки модального вікна */
+    Ховер, фокус кнопки модального вікна */
 &:hover,
 &:focus {
   background-color: var(--second-cl-btn-main);
+
 }}
 
 /* Кнопка на головнвій */
 .btn-main {
     padding: 10px 32px;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
@@ -46,15 +46,20 @@
     cursor: pointer;
     transition: background-color var(--anim), color var(--anim);
   
+  
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px; }
+
   /* Ховер, фокус кнопки */
 &:hover,
 &:focus {
     background-color: var(--second-cl-btn-main);
-  }}
 
+}}
 
   .btn-footer {
     width: 200px;
+    height: 50px;
     padding-left: 29px;
     margin-left: 12px;
     border-radius: 4px;

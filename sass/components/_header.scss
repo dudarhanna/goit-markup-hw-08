@@ -1,7 +1,9 @@
 /* Cекція хедер */
 .header {
   border-bottom: 1px solid var(--header-cl);
-}
+  @media screen and (min-width: 320px) and  (max-width: 767px) {
+  position: ;
+  }}
 .header-container {
   display: flex;
   align-items: center;
@@ -16,7 +18,10 @@
   }
 }
 .contact {
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and  (max-width: 767px) {
+    display: none;
+  } 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
