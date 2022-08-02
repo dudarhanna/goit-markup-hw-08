@@ -19,7 +19,7 @@
     cursor: pointer;
     transition: background-color var(--anim), color var(--anim);
   
-    Ховер, фокус кнопки модального вікна */
+    // Ховер, фокус кнопки модального вікна
 &:hover,
 &:focus {
   background-color: var(--second-cl-btn-main);

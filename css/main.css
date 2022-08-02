@@ -430,12 +430,6 @@ img {
   cursor: pointer;
   -webkit-transition: background-color var(--anim), color var(--anim);
   transition: background-color var(--anim), color var(--anim);
-  /* Ховер, фокус кнопки модального вікна */
-}
-@media screen and (min-width: 1200px) {
-  .btn-modal {
-    margin-top: 0px;
-  }
 }
 .btn-modal:hover, .btn-modal:focus {
   background-color: var(--second-cl-btn-main);
@@ -444,7 +438,6 @@ img {
 /* Кнопка на головнвій */
 .btn-main {
   padding: 10px 32px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -467,6 +460,11 @@ img {
   -webkit-transition: background-color var(--anim), color var(--anim);
   transition: background-color var(--anim), color var(--anim);
   /* Ховер, фокус кнопки */
+}
+@media screen and (min-width: 1200px) {
+  .btn-main {
+    margin-top: 30px;
+  }
 }
 .btn-main:hover, .btn-main:focus {
   background-color: var(--second-cl-btn-main);
@@ -678,6 +676,14 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .hero-section {
+    position: absolute;
+    top: auto;
+    left: auto;
+  }
+}
+
 /* Заголовки */
 .section-tittle {
   font-weight: 700;
@@ -721,7 +727,6 @@ img {
   color: var(--main-txt-cl);
 }
 
-/* Модальне вікно */
 .sign-up-text {
   display: inline-block;
   color: var(--black-cl);
@@ -1400,14 +1405,12 @@ img {
           justify-content: center;
 }
 
-.footer-item-adress {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 320px) {
   .footer-item-adress {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1509,6 +1512,7 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-button {
     margin-top: 60px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

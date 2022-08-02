@@ -1,9 +1,7 @@
 /* Cекція хедер */
 .header {
   border-bottom: 1px solid var(--header-cl);
-  @media screen and (min-width: 320px) and  (max-width: 767px) {
-  position: ;
-  }}
+}
 .header-container {
   display: flex;
   align-items: center;
