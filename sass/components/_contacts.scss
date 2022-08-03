@@ -29,5 +29,7 @@
   margin-right: 10px;
 }
 .contact-mail {
-  margin-bottom: 10px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
