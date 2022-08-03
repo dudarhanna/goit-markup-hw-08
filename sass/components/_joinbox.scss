@@ -4,6 +4,7 @@
 
 .footer-button {
   @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
     margin-top: 60px;
     max-width: 450px;
   }
@@ -13,7 +14,7 @@
 }
 
 .footer-subscribe {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-bottom: 15px;
@@ -28,9 +29,14 @@
   transition: border-color var(--anim);
 
   @media screen and (min-width: 320px) and (max-width: 1199px) {
-    width: 450px;
     height: 50px;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .footer-subscribe-section {

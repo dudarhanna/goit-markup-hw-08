@@ -148,23 +148,80 @@
             </li>
           </ul>
           <!-- Cписок з img -->
-          <ul class="card-set list">
+          <ul class="card-set list cards-link-grow">
             <li class="card-set-item">
-              <a class="portfolio-block link" href="">
+              <a class="portfolio-block link cards-box-grow" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img1.jpg"
-                    alt="Изображение-веб-сайт-технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <!-- Тег picture -->
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img1-lg.webp    1x,
+                        ./images/imgportfolio/img1@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img1-lg.jpg    1x,
+                        ./images/imgportfolio/img1@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img1-md.webp    1x,
+                        ./images/imgportfolio/img1@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img1-md.jpg    1x,
+                        ./images/imgportfolio/img1@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img1-sm.webp    1x,
+                        ./images/imgportfolio/img1@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img1-sm.jpg    1x,
+                        ./images/imgportfolio/img1@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img1-sm.jpg"
+                      alt="Изображение-веб-сайт-технокряк"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="text-frame">
+                <div class="text-frame cards-box-grow">
                   <h2 class="tittle-portfolio">Технокряк</h2>
                   <p class="text-portfolio">Веб-сайт</p>
                 </div>
@@ -174,12 +231,68 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img2.jpg"
-                    alt="Изображение-дизайна-постера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img2-lg.webp    1x,
+                        ./images/imgportfolio/img2@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img2-lg.jpg    1x,
+                        ./images/imgportfolio/img2@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img2-md.webp    1x,
+                        ./images/imgportfolio/img2@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img2-md.jpg    1x,
+                        ./images/imgportfolio/img2@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img2-sm.webp    1x,
+                        ./images/imgportfolio/img2@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img2-sm.jpg    1x,
+                        ./images/imgportfolio/img2@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img2-sm.jpg"
+                      alt="Изображение-дизайна-постера"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -199,12 +312,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img3.jpg"
-                    alt="Изображение-приложения-ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img3-lg.webp    1x,
+                        ./images/imgportfolio/img3@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img3-lg.jpg    1x,
+                        ./images/imgportfolio/img3@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img3-md.webp    1x,
+                        ./images/imgportfolio/img3@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img3-md.jpg    1x,
+                        ./images/imgportfolio/img3@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img3-sm.webp    1x,
+                        ./images/imgportfolio/img3@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img3-sm.jpg    1x,
+                        ./images/imgportfolio/img3@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img3-sm.jpg"
+                      alt="Изображение-приложения-ресторана"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -223,12 +391,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img4.jpg"
-                    alt="Изображение-маркетинга-проекта-прайм"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img4-lg.webp    1x,
+                        ./images/imgportfolio/img4@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img4-lg.jpg    1x,
+                        ./images/imgportfolio/img4@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img4-md.webp    1x,
+                        ./images/imgportfolio/img4@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img4-md.jpg    1x,
+                        ./images/imgportfolio/img4@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img4-sm.webp    1x,
+                        ./images/imgportfolio/img4@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img4-sm.jpg    1x,
+                        ./images/imgportfolio/img4@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img4-sm.jpg"
+                      alt="Изображение-маркетинга-проекта-прайм"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -246,12 +469,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img5.jpg"
-                    alt="Изображение-приложения-проекта-Боксес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img5-lg.webp    1x,
+                        ./images/imgportfolio/img5@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img5-lg.jpg    1x,
+                        ./images/imgportfolio/img5@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img5-md.webp    1x,
+                        ./images/imgportfolio/img5@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img5-md.jpg    1x,
+                        ./images/imgportfolio/img5@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img5-sm.webp    1x,
+                        ./images/imgportfolio/img5@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img5-sm.jpg    1x,
+                        ./images/imgportfolio/img5@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img5-sm.jpg"
+                      alt="Изображение-приложения-проекта-Боксес"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -270,12 +548,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img6.jpg"
-                    alt="Изображение-веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img6-lg.webp    1x,
+                        ./images/imgportfolio/img6@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img6-lg.jpg    1x,
+                        ./images/imgportfolio/img6@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img6-md.webp    1x,
+                        ./images/imgportfolio/img6@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img6-md.jpg    1x,
+                        ./images/imgportfolio/img6@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img6-sm.webp    1x,
+                        ./images/imgportfolio/img6@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img6-sm.jpg    1x,
+                        ./images/imgportfolio/img6@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img6-sm.jpg"
+                      alt="Изображение-веб-сайта"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -294,12 +627,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img7.jpg"
-                    alt="Изображение-дизайна-издания"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img7-lg.webp    1x,
+                        ./images/imgportfolio/img7@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img7-lg.jpg    1x,
+                        ./images/imgportfolio/img7@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img7-md.webp    1x,
+                        ./images/imgportfolio/img7@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img7-md.jpg    1x,
+                        ./images/imgportfolio/img7@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img7-sm.webp    1x,
+                        ./images/imgportfolio/img7@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img7-sm.jpg    1x,
+                        ./images/imgportfolio/img7@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img7-sm.jpg"
+                      alt="Изображение-дизайна-издания"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -318,12 +706,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img8.jpg"
-                    alt="Изображение-маркетинга-проекта"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img8-lg.webp    1x,
+                        ./images/imgportfolio/img8@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img8-lg.jpg    1x,
+                        ./images/imgportfolio/img8@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img8-md.webp    1x,
+                        ./images/imgportfolio/img8@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img8-md.jpg    1x,
+                        ./images/imgportfolio/img8@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img8-sm.webp    1x,
+                        ./images/imgportfolio/img8@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img8-sm.jpg    1x,
+                        ./images/imgportfolio/img8@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img8-sm.jpg"
+                      alt="Изображение-маркетинга-проекта"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -342,12 +785,67 @@
             <li class="card-set-item">
               <a class="portfolio-block link" href="">
                 <div class="overlay-card">
-                  <img
-                    src="./images/  imgportfolio/img9.jpg"
-                    alt="Изображение-приложения-бизнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img9-lg.webp    1x,
+                        ./images/imgportfolio/img9@2x-lg.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/imgportfolio/img9-lg.jpg    1x,
+                        ./images/imgportfolio/img9@2x-lg.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img9-md.webp    1x,
+                        ./images/imgportfolio/img9@2x-md.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/imgportfolio/img9-md.jpg    1x,
+                        ./images/imgportfolio/img9@2x-md.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <!-- mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img9-sm.webp    1x,
+                        ./images/imgportfolio/img9@2x-sm.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/imgportfolio/img9-sm.jpg    1x,
+                        ./images/imgportfolio/img8@2x-sm.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/imgportfolio/img9-sm.jpg"
+                      alt="Изображение-приложения-бизнес"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
 
                   <p class="portfolio-overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -367,7 +865,7 @@
       </section>
     </main>
     <!-- Секція футер -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-box">
         <div class="footer-item-adress">
           <a class="logo link footer-logo" href="./index.html">
@@ -456,7 +954,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

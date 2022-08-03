@@ -1,6 +1,5 @@
 /* Cекція-Герой */
 .main-title {
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -15,20 +14,22 @@
   margin-top: auto;
   padding-bottom: 30px;
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  font-size: 26px;
-line-height: 1.62; 
-
-}}
-
-.hero-section {
   @media screen and (min-width: 320px) and (max-width: 1199px) {
-    position: absolute; 
-    top: auto;
-    left: auto;
+    font-size: 26px;
+    line-height: 1.62;
   }
-
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
 }
+
+// .hero-section {
+//   @media screen and (min-width: 320px) and (max-width: 1199px) {
+//     position: absolute;
+//     top: auto;
+//     left: auto;
+//   }
+// }
 
 /* Заголовки */
 .section-tittle {

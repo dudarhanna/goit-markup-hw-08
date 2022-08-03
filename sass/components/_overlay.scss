@@ -92,3 +92,17 @@
   border: 1px solid var(--portfolio-cl);
   border-top: none;
 }
+
+// Виїзджаюча картка в портфоліо
+.cards-link-grow {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 100%;
+    // flex-direction: column;
+  }
+}
+.cards-box-grow {
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
+}

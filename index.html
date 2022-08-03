@@ -123,14 +123,17 @@
       <!-- Секція Hero -->
       <section class="hero">
         <div class="hero-section container">
-          <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="main-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button class="btn-main" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
-       <!-- Модальне вікно -->
-       <div class="backdrop is-hidden" data-modal>
+      <!-- Модальне вікно -->
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-close-btn" type="button" data-modal-close>
             <svg width="18" height="18">
@@ -159,7 +162,6 @@
               </svg>
             </div>
 
-           
             <label for="tel" class="form-field">Телефон</label>
             <div class="position-icon">
               <input
@@ -174,7 +176,6 @@
               </svg>
             </div>
 
-            
             <label for="email" class="form-field">Почта</label>
             <div class="position-icon">
               <input
@@ -190,7 +191,6 @@
               </svg>
             </div>
 
-            
             <label class="form-field-last">Комментарий</label>
             <div class="position-icon">
               <textarea
@@ -198,10 +198,10 @@
                 name="user-comment"
                 placeholder="Введите текст"
               ></textarea>
-            </div> 
+            </div>
 
-      <!-- Agreement -->
-    <label class="label-agreement">
+            <!-- Agreement -->
+            <label class="label-agreement">
               <input class="check-input" type="checkbox" required />
               <span class="checkbox-icon"> </span>
               <span>
@@ -214,7 +214,7 @@
           </form>
         </div>
       </div>
-     <!-- Секція Benefits  -->
+      <!-- Секція Benefits  -->
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -281,19 +281,93 @@
           <h2 class="section-tittle tittle-big">Чем мы занимаемся</h2>
           <ul class="list about-list">
             <li class="about__benefits__list img__wrapper">
-              <img src="./images/img1.jpg" alt="Верстка" width="370" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img1-lg.webp     1x,
+                    ./images/about/img1-2x@-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img1-lg.jpg     1x,
+                    ./images/about/img1-2x@-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/about/img1-lg.jpg"
+                  alt="Верстка"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="about-desk">Десктопные приложения</p>
             </li>
             <li class="about__benefits__list img__wrapper">
-              <img src="./images/img2.jpg" alt="Дизайн" width="370" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img2-lg.webp     1x,
+                    ./images/about/img2-2x@-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img2-lg.jpg     1x,
+                    ./images/about/img2-2x@-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/about/img2-lg.jpg"
+                  alt="Дизайн"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="about-desk">Мобильные приложения</p>
             </li>
             <li class="about__benefits__list img__wrapper">
-              <img
-                src="./images/img3.jpg"
-                alt="Внешнее оформление"
-                width="370"
-              />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img3-lg.webp     1x,
+                    ./images/about/img3-2x@-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/img3-lg.jpg     1x,
+                    ./images/about/img3-2x@-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/about/img3-lg.jpg"
+                  alt="Внешнее оформление"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="about-desk">Дизайнерские решения</p>
             </li>
           </ul>
@@ -305,7 +379,69 @@
           <h2 class="section-tittle tittle-big">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item team-group">
-              <img src="./images/imgigor.jpg" alt="Игорь" width="270" />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgigor-lg.webp    1x,
+                    ./images/team/imgigor@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgigor-lg.jpg    1x,
+                    ./images/team/imgigor@2x-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgigor-md.webp    1x,
+                    ./images/team/imgigor@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgigor-md.jpg    1x,
+                    ./images/team/imgigor@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgigor1-sm.webp    1x,
+                    ./images/team/imgigor1@2x-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgigor1-sm.jpg    1x,
+                    ./images/team/imgigor1@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/imgigor1-sm.jpg"
+                  alt="Игорь"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team">
                 <h3 class="section-team">Игорь Демьяненко</h3>
                 <p class="text-team">Product Designer</p>
@@ -342,7 +478,69 @@
               </div>
             </li>
             <li class="team-item team-group">
-              <img src="./images/imgolga.jpg" alt="Ольга" width="270" />
+              <!-- Тег picture -->
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgolga-lg.webp    1x,
+                    ./images/team/imgolga@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgolga-lg.jpg    1x,
+                    ./images/team/imgolga@2x-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgolga-md.webp    1x,
+                    ./images/team/imgolga@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgolga-md.jpg    1x,
+                    ./images/team/imgolga@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgolga1-sm.webp    1x,
+                    ./images/team/imgolga1@2x-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgolga1-sm.jpg    1x,
+                    ./images/team/imgolga1@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/imgolga1-sm.jpg"
+                  alt="Ольга"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team">
                 <h3 class="section-team">Ольга Репина</h3>
                 <p class="text-team">Frontend Developer</p>
@@ -379,7 +577,68 @@
               </div>
             </li>
             <li class="team-item team-group">
-              <img src="./images/imgnikolaj.jpg" alt="Николай" width="270" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgnikolai-lg.webp    1x,
+                    ./images/team/imgnikolai@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgnikolai-lg.jpg    1x,
+                    ./images/team/imgnikolai@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgnikolai-md.webp    1x,
+                    ./images/team/imgnikolai@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgnikolai-md.jpg    1x,
+                    ./images/team/imgnikolai@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgnikolai1-sm.webp    1x,
+                    ./images/team/imgnikolai1@2x-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgnikolai1-sm.jpg    1x,
+                    ./images/team/imgnikolai1@2x-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/imgnikolai1-sm.jpg"
+                  alt="Николай"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team">
                 <h3 class="section-team">Николай Тарасов</h3>
                 <p class="text-team">Marketing</p>
@@ -416,7 +675,68 @@
               </div>
             </li>
             <li class="team-item team-group">
-              <img src="./images/imgmihail.jpg" alt="Михаил" width="270" />
+              <picture>
+                <!-- desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgmihail-lg.webp    1x,
+                    ./images/team/imgmihail@2x-lg.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/imgmihail-lg.jpg    1x,
+                    ./images/team/imgmihail@2x-lg.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgmihail-md.webp    1x,
+                    ./images/team/imgmihail@2x-md.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/imgmihail-md.jpg    1x,
+                    ./images/team/imgmihail@2x-md.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgmihail1@2x.-sm.webp 1x,
+                    ./images/team/imgmihail1@2x.-sm.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/imgmihail-sm.jpg      1x,
+                    ./images/team/imgmihail1@2x.-sm.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/imgmihail-sm.jpg"
+                  alt="Михаил"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team">
                 <h3 class="section-team">Михаил Ермаков</h3>
                 <p class="text-team">UI Designer</p>
@@ -502,7 +822,7 @@
       </section>
     </main>
     <!-- Секція футер -->
-     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer-box">
         <div class="footer-item-adress">
           <a class="logo link footer-logo" href="./index.html">
